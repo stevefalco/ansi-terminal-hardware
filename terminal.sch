@@ -36,11 +36,11 @@ F 3 " ~" H 15100 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Mini-DIN-6 J2
+L falco_terminal:Mini-DIN-6 J2
 U 1 1 604B68AC
 P 2700 4700
 F 0 "J2" H 2700 4950 50  0000 C CNN
-F 1 "Mini-DIN-6" H 2700 4450 50  0000 C CNN
+F 1 "Mini-DIN-6" H 2700 5050 50  0000 C CNN
 F 2 "falco_terminal:CUI_MD-60SM" H 2700 4700 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 2700 4700 50  0001 C CNN
 	1    2700 4700
@@ -1076,7 +1076,7 @@ F 3 "" H 2200 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 5250 2200 5350
+	2200 5250 2200 5300
 Text Notes 2100 3100 0    50   ~ 0
 PS-2 Keyboards run on 5 volts, and the signals are open-collector.\nWe so far have no reason to drive them, but we do have to\nlevel-shift them down to 3.3 volts for the FPGA.  Our level-shifters\nare bidirectional, so we can drive the keyboard, if we ever need to.\n\nThe keyboard provides the clock to the FPGA.
 Wire Wire Line
@@ -1410,4 +1410,21 @@ F 3 "~" H 3750 9850 50  0001 C CNN
 	1    3750 9850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2200 5300 2600 5300
+Wire Wire Line
+	2800 5300 2800 5000
+Connection ~ 2200 5300
+Wire Wire Line
+	2200 5300 2200 5350
+Wire Wire Line
+	2700 5000 2700 5300
+Connection ~ 2700 5300
+Wire Wire Line
+	2700 5300 2800 5300
+Wire Wire Line
+	2600 5000 2600 5300
+Connection ~ 2600 5300
+Wire Wire Line
+	2600 5300 2700 5300
 $EndSCHEMATC
