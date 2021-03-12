@@ -36,11 +36,11 @@ F 3 " ~" H 15100 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Mini-DIN-6 J2
+L falco_terminal:Mini-DIN-6 J2
 U 1 1 604B68AC
 P 2700 4700
 F 0 "J2" H 2700 4950 50  0000 C CNN
-F 1 "Mini-DIN-6" H 2700 4450 50  0000 C CNN
+F 1 "Mini-DIN-6" H 2700 5050 50  0000 C CNN
 F 2 "falco_terminal:CUI_MD-60SM" H 2700 4700 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 2700 4700 50  0001 C CNN
 	1    2700 4700
@@ -362,17 +362,17 @@ Wire Wire Line
 	6150 4700 6750 4700
 NoConn ~ 6750 3400
 Text Label 6150 3500 0    50   ~ 0
-PIXEL_R1
+PIXEL_B1
 Text Label 6150 3600 0    50   ~ 0
-PIXEL_R2
+PIXEL_B2
 Text Label 6150 3700 0    50   ~ 0
 PIXEL_G1
 Text Label 6150 3800 0    50   ~ 0
 PIXEL_G2
 Text Label 6150 3900 0    50   ~ 0
-PIXEL_B1
+PIXEL_R1
 Text Label 6150 4000 0    50   ~ 0
-PIXEL_B2
+PIXEL_R2
 Text Label 6150 4100 0    50   ~ 0
 HSYNC
 Text Label 6150 4300 0    50   ~ 0
@@ -1076,7 +1076,7 @@ F 3 "" H 2200 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 5250 2200 5350
+	2200 5250 2200 5300
 Text Notes 2100 3100 0    50   ~ 0
 PS-2 Keyboards run on 5 volts, and the signals are open-collector.\nWe so far have no reason to drive them, but we do have to\nlevel-shift them down to 3.3 volts for the FPGA.  Our level-shifters\nare bidirectional, so we can drive the keyboard, if we ever need to.\n\nThe keyboard provides the clock to the FPGA.
 Wire Wire Line
@@ -1410,4 +1410,58 @@ F 3 "~" H 3750 9850 50  0001 C CNN
 	1    3750 9850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2200 5300 2600 5300
+Wire Wire Line
+	2800 5300 2800 5000
+Connection ~ 2200 5300
+Wire Wire Line
+	2200 5300 2200 5350
+Wire Wire Line
+	2700 5000 2700 5300
+Connection ~ 2700 5300
+Wire Wire Line
+	2700 5300 2800 5300
+Wire Wire Line
+	2600 5000 2600 5300
+Connection ~ 2600 5300
+Wire Wire Line
+	2600 5300 2700 5300
+$Comp
+L Device:C C?
+U 1 1 6050E6BE
+P 4050 4550
+F 0 "C?" H 4075 4650 50  0000 L CNN
+F 1 "0.1u" H 4075 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4088 4400 50  0001 C CNN
+F 3 "~" H 4050 4550 50  0001 C CNN
+	1    4050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 605108D7
+P 4050 4350
+F 0 "#PWR?" H 4050 4200 50  0001 C CNN
+F 1 "+3V3" H 4050 4490 50  0000 C CNN
+F 2 "" H 4050 4350 50  0001 C CNN
+F 3 "" H 4050 4350 50  0001 C CNN
+	1    4050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60511003
+P 4050 4750
+F 0 "#PWR?" H 4050 4500 50  0001 C CNN
+F 1 "GND" H 4050 4600 50  0000 C CNN
+F 2 "" H 4050 4750 50  0001 C CNN
+F 3 "" H 4050 4750 50  0001 C CNN
+	1    4050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4350 4050 4400
+Wire Wire Line
+	4050 4700 4050 4750
 $EndSCHEMATC
