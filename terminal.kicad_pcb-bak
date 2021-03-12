@@ -1816,15 +1816,15 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 604C2E3B)
-    (at 159 144)
+    (at 157.33 138.34)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /605D1927)
     (attr virtual)
-    (fp_text reference H2 (at 0 -4.2) (layer F.SilkS) hide
+    (fp_text reference H2 (at 0 -4.2) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MountingHole (at 0 4.2) (layer F.Fab) hide
+    (fp_text value MountingHole (at 0 4.2) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
