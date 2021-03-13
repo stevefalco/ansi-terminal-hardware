@@ -1,0 +1,17 @@
+#!/bin/sh
+
+rm terminal.zip
+
+cd gerbers
+
+zip ../terminal.zip \
+  terminal-B_Cu.gbl \
+  terminal-B_Mask.gbs \
+  terminal-B_Paste.gbp \
+  terminal-B_SilkS.gbo \
+  terminal-Edge_Cuts.gm1 \
+  terminal-F_Cu.gtl \
+  terminal-F_Mask.gts \
+  terminal-F_Paste.gtp \
+  terminal-F_SilkS.gto \
+  terminal.drl

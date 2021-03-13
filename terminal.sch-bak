@@ -224,8 +224,8 @@ $Comp
 L Device:C C4
 U 1 1 604D2444
 P 11700 5500
-F 0 "C4" H 11725 5600 50  0000 L CNN
-F 1 "0.1u" H 11725 5400 50  0000 L CNN
+F 0 "C4" H 11550 5600 50  0000 L CNN
+F 1 "0.1u" H 11500 5400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 11738 5350 50  0001 C CNN
 F 3 "~" H 11700 5500 50  0001 C CNN
 	1    11700 5500
@@ -1120,12 +1120,12 @@ NoConn ~ 14250 2200
 NoConn ~ 14250 2400
 NoConn ~ 14250 3000
 Wire Wire Line
-	15050 2600 14250 2600
+	15450 2600 14650 2600
 Wire Wire Line
-	15050 2800 14250 2800
-Text Label 15050 2600 2    50   ~ 0
+	15450 2800 14650 2800
+Text Label 15450 2600 2    50   ~ 0
 HSYNC
-Text Label 15050 2800 2    50   ~ 0
+Text Label 15450 2800 2    50   ~ 0
 VSYNC
 $Comp
 L Device:R_US R1
@@ -1367,44 +1367,44 @@ Wire Wire Line
 	2250 8500 2250 8350
 Connection ~ 2650 8500
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole_Pad H1
 U 1 1 605CE31F
 P 2700 9850
 F 0 "H1" H 2700 10050 50  0000 C CNN
-F 1 "MountingHole" H 2700 9975 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2700 9850 50  0001 C CNN
+F 1 "MountingHole_Pad" H 2700 9975 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 2700 9850 50  0001 C CNN
 F 3 "~" H 2700 9850 50  0001 C CNN
 	1    2700 9850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole_Pad H2
 U 1 1 605D1927
 P 3050 9850
 F 0 "H2" H 3050 10050 50  0000 C CNN
-F 1 "MountingHole" H 3050 9975 50  0001 C CNN
+F 1 "MountingHole_Pad" H 3050 9975 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 3050 9850 50  0001 C CNN
 F 3 "~" H 3050 9850 50  0001 C CNN
 	1    3050 9850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Mechanical:MountingHole_Pad H3
 U 1 1 605D1BDF
 P 3400 9850
 F 0 "H3" H 3400 10050 50  0000 C CNN
-F 1 "MountingHole" H 3400 9975 50  0001 C CNN
+F 1 "MountingHole_Pad" H 3400 9975 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 3400 9850 50  0001 C CNN
 F 3 "~" H 3400 9850 50  0001 C CNN
 	1    3400 9850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L Mechanical:MountingHole_Pad H4
 U 1 1 605D1D93
 P 3750 9850
 F 0 "H4" H 3750 10050 50  0000 C CNN
-F 1 "MountingHole" H 3750 9975 50  0001 C CNN
+F 1 "MountingHole_Pad" H 3750 9975 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 3750 9850 50  0001 C CNN
 F 3 "~" H 3750 9850 50  0001 C CNN
 	1    3750 9850
@@ -1428,10 +1428,10 @@ Connection ~ 2600 5300
 Wire Wire Line
 	2600 5300 2700 5300
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 6050E6BE
 P 4050 4550
-F 0 "C?" H 4075 4650 50  0000 L CNN
+F 0 "C10" H 4075 4650 50  0000 L CNN
 F 1 "0.1u" H 4075 4450 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4088 4400 50  0001 C CNN
 F 3 "~" H 4050 4550 50  0001 C CNN
@@ -1439,10 +1439,10 @@ F 3 "~" H 4050 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0101
 U 1 1 605108D7
 P 4050 4350
-F 0 "#PWR?" H 4050 4200 50  0001 C CNN
+F 0 "#PWR0101" H 4050 4200 50  0001 C CNN
 F 1 "+3V3" H 4050 4490 50  0000 C CNN
 F 2 "" H 4050 4350 50  0001 C CNN
 F 3 "" H 4050 4350 50  0001 C CNN
@@ -1450,10 +1450,10 @@ F 3 "" H 4050 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 60511003
 P 4050 4750
-F 0 "#PWR?" H 4050 4500 50  0001 C CNN
+F 0 "#PWR0102" H 4050 4500 50  0001 C CNN
 F 1 "GND" H 4050 4600 50  0000 C CNN
 F 2 "" H 4050 4750 50  0001 C CNN
 F 3 "" H 4050 4750 50  0001 C CNN
@@ -1464,4 +1464,72 @@ Wire Wire Line
 	4050 4350 4050 4400
 Wire Wire Line
 	4050 4700 4050 4750
+$Comp
+L Device:R_US R19
+U 1 1 60518B55
+P 14500 2600
+F 0 "R19" V 14400 2700 50  0000 C CNN
+F 1 "100" V 14400 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 14540 2590 50  0001 C CNN
+F 3 "~" H 14500 2600 50  0001 C CNN
+	1    14500 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R20
+U 1 1 605195CB
+P 14500 2800
+F 0 "R20" V 14400 2900 50  0000 C CNN
+F 1 "100" V 14400 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 14540 2790 50  0001 C CNN
+F 3 "~" H 14500 2800 50  0001 C CNN
+	1    14500 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14250 2600 14350 2600
+Wire Wire Line
+	14250 2800 14350 2800
+Text Label 13550 5850 0    50   ~ 0
+VS+
+Text Label 13550 6150 0    50   ~ 0
+VS-
+Text Label 13500 5350 0    50   ~ 0
+C2+
+Text Label 13500 5650 0    50   ~ 0
+C2-
+Text Label 11700 5350 0    50   ~ 0
+C1+
+Text Label 11700 5650 0    50   ~ 0
+C1-
+$Comp
+L power:GND #PWR?
+U 1 1 6054131C
+P 2700 10100
+F 0 "#PWR?" H 2700 9850 50  0001 C CNN
+F 1 "GND" H 2700 9950 50  0000 C CNN
+F 2 "" H 2700 10100 50  0001 C CNN
+F 3 "" H 2700 10100 50  0001 C CNN
+	1    2700 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 10100 2700 10050
+Wire Wire Line
+	2700 10050 3050 10050
+Wire Wire Line
+	3750 10050 3750 9950
+Connection ~ 2700 10050
+Wire Wire Line
+	2700 10050 2700 9950
+Wire Wire Line
+	3400 9950 3400 10050
+Connection ~ 3400 10050
+Wire Wire Line
+	3400 10050 3750 10050
+Wire Wire Line
+	3050 9950 3050 10050
+Connection ~ 3050 10050
+Wire Wire Line
+	3050 10050 3400 10050
 $EndSCHEMATC
