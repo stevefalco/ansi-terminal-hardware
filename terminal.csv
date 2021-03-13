@@ -1,0 +1,38 @@
+Title,ASCII Terminal
+Revision,1
+Date,2021-03-11
+Generated,Sat 13 Mar 2021 14:03:59 EST
+Company,Falco Engineering
+Comment 1,
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,44
+Total Unique Parts,17
+
+
+
+Ref,Qty,Value,Footprint,Datasheet,
+C1 C3 C4 C5 C6 C7 C8 C10 ,8,0.1u,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,~
+C2 ,1,10u,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,~
+C9 ,1,100u,Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder,~
+H1 H2 H3 H4 ,4,MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad,~
+J1 ,1,L77HDE15SD1CH4F-ND,falco_terminal:AMPHENOL_L77HDE15SD1CH4F, ~
+J2 ,1,Mini-DIN-6,falco_terminal:CUI_MD-60SM,http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf
+J3 ,1,UART Connector,falco_terminal:AMPHENOL_LD09S33E4GX00LF, ~
+J4 ,1,DEBUG UART HEADER,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,~
+J5 ,1,Power,falco_terminal:BarrelJack_CUI_PJ-063AH_Horizontal,~
+Q1 Q2 ,2,BSS138,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+R1 R3 R5 ,3,500,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,~
+R2 R4 R6 ,3,1k,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,~
+R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17 R18 ,12,10k,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,~
+R19 R20 ,2,100,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,~
+SW1 ,1,CT2088-ND,Package_DIP:DIP-16_W7.62mm_Socket,~
+U1 ,1,CYC1000,falco_CYC1000:CYC1000,
+U2 ,1,MAX3232,falco_terminal:TSSOP-16_4.4x5mm_P0.65mm,https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Sat 13 Mar 2021 14:03:59 EST
