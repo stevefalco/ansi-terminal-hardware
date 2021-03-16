@@ -1383,7 +1383,7 @@ U 1 1 605D1927
 P 3050 9850
 F 0 "H2" H 3050 10050 50  0000 C CNN
 F 1 "MountingHole_Pad" H 3050 9975 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 3050 9850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 3050 9850 50  0001 C CNN
 F 3 "~" H 3050 9850 50  0001 C CNN
 	1    3050 9850
 	1    0    0    -1  
@@ -1394,7 +1394,7 @@ U 1 1 605D1BDF
 P 3400 9850
 F 0 "H3" H 3400 10050 50  0000 C CNN
 F 1 "MountingHole_Pad" H 3400 9975 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 3400 9850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 3400 9850 50  0001 C CNN
 F 3 "~" H 3400 9850 50  0001 C CNN
 	1    3400 9850
 	1    0    0    -1  
@@ -1405,7 +1405,7 @@ U 1 1 605D1D93
 P 3750 9850
 F 0 "H4" H 3750 10050 50  0000 C CNN
 F 1 "MountingHole_Pad" H 3750 9975 50  0001 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 3750 9850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 3750 9850 50  0001 C CNN
 F 3 "~" H 3750 9850 50  0001 C CNN
 	1    3750 9850
 	1    0    0    -1  
@@ -1503,10 +1503,10 @@ C1+
 Text Label 11700 5650 0    50   ~ 0
 C1-
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 6054131C
 P 2700 10100
-F 0 "#PWR?" H 2700 9850 50  0001 C CNN
+F 0 "#PWR0103" H 2700 9850 50  0001 C CNN
 F 1 "GND" H 2700 9950 50  0000 C CNN
 F 2 "" H 2700 10100 50  0001 C CNN
 F 3 "" H 2700 10100 50  0001 C CNN
@@ -1532,4 +1532,6 @@ Wire Wire Line
 Connection ~ 3050 10050
 Wire Wire Line
 	3050 10050 3400 10050
+Text Notes 12050 8550 0    50   ~ 0
+We are wired as a DCE (i.e., like a modem).  We connect to a DTE (PC or\nother computer) with a straight cable.  However, the PiDP-11 is also\nwired as a DCE, so we need a null-modem cable with it.\n\nWe receive data from the DTE on pin 3 (TXD), and we transmit data to\nthe DTE on pin 2 (RXD).\n\nWe deassert the CTS signal on pin 8 when our receive buffer becomes\ntoo full.
 $EndSCHEMATC
