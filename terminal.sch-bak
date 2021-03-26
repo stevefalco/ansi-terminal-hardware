@@ -318,13 +318,13 @@ Wire Wire Line
 Wire Wire Line
 	11250 6950 11900 6950
 Text Label 11250 6350 0    50   ~ 0
-UART_RX
-Text Label 11250 6550 0    50   ~ 0
-UART_CTS
-Text Label 11250 6750 0    50   ~ 0
 UART_TX
-Text Label 11250 6950 0    50   ~ 0
+Text Label 11250 6550 0    50   ~ 0
 UART_RTS
+Text Label 11250 6750 0    50   ~ 0
+UART_RX
+Text Label 11250 6950 0    50   ~ 0
+UART_CTS
 $Comp
 L falco_terminal:DB15_Female J1
 U 1 1 604A93EA
@@ -378,9 +378,9 @@ HSYNC
 Text Label 6150 4300 0    50   ~ 0
 VSYNC
 Text Label 6150 4400 0    50   ~ 0
-UART_RX
-Text Label 6150 4500 0    50   ~ 0
 UART_TX
+Text Label 6150 4500 0    50   ~ 0
+UART_RX
 Text Label 6150 4600 0    50   ~ 0
 KBD_CLK
 Text Label 6150 4700 0    50   ~ 0
@@ -406,9 +406,9 @@ DIP_SW2
 Text Label 8500 5200 2    50   ~ 0
 DIP_SW3
 Text Label 8500 4700 2    50   ~ 0
-UART_RTS
-Text Label 8500 4800 2    50   ~ 0
 UART_CTS
+Text Label 8500 4800 2    50   ~ 0
+UART_RTS
 $Comp
 L Switch:SW_DIP_x08 SW1
 U 1 1 60555A08
@@ -1532,6 +1532,6 @@ Wire Wire Line
 Connection ~ 3050 10050
 Wire Wire Line
 	3050 10050 3400 10050
-Text Notes 12050 8550 0    50   ~ 0
-We are wired as a DCE (i.e., like a modem).  We connect to a DTE (PC or\nother computer) with a straight cable.  However, the PiDP-11 is also\nwired as a DCE, so we need a null-modem cable with it.\n\nWe receive data from the DTE on pin 3 (TXD), and we transmit data to\nthe DTE on pin 2 (RXD).\n\nWe deassert the CTS signal on pin 8 when our receive buffer becomes\ntoo full.
+Text Notes 11900 9150 0    50   ~ 0
+Signal names at the J3 UART Connector are named from the perspective\nof the DTE to which we are connected, and are therefore backwards\nwith respect to our FPGA!\n\nWe are wired as a DCE (i.e., like a modem).  We connect to a DTE (PC or\nother computer) with a straight cable.  However, the PiDP-11 is also\nwired as a DCE, so we need a null-modem cable with it.\n\nWe receive data from the DTE on pin 3 (DTE TXD becomes our\nUART_RX), and we transmit data to the DTE on pin 2 (our UART_TX\nbecomes DTE RXD).\n\nSimilarly, our UART_RTS signal becomes the DTE CTS signal on pin 8,\nand the DTS RTS signal on pin 7 becomes our UART_CTS signal.\n\nWe deassert our UART_RTS when our receive buffer becomes too full.
 $EndSCHEMATC
