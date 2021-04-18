@@ -1,0 +1,5 @@
+For this project I used a CanaKit power supply that is normally used with
+a PI 3 B+.
+
+I cut off the USB connector and attached a 2.10mm ID x 5.50mm OD
+barrel-type power connector instead.
