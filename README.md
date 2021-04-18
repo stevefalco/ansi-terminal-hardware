@@ -2,7 +2,7 @@ ANSI Terminal is a "dumb" terminal that emulates part of a VT100.  It is suffici
 
 Unlike many existing terminal projects, this project targets 1280x1024 monitors, which are much more common than the 640x480 monitors of days gone by.  This also allows higher quality characters, using 16x32 glyphs, rather than the more common 8x16 glyphs.
 
-The terminals supports both hardware and software flow control, as selected by a dip switch, and baud rates from 110 to 115200 are supported.
+The terminal supports both hardware and software flow control, as selected by a dip switch, and baud rates from 110 to 115200 are supported.
 
 This project contains the KiCAD schematic, board layout, gerbers, and a 3-D
 printable case design.  Note that this is a 2-layer board with surface mount
