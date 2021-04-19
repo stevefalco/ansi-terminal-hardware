@@ -12,7 +12,7 @@ The terminal supports both hardware and software flow control, as selected by a 
 
 This project contains the KiCAD schematic, board layout, gerbers, and a 3-D printable case design.  Note that this is a 2-layer board with surface mount components.
 
-A companion project, ansi-terminal-firmware, contains the FPGA and assembly language software for the ANSI Terminal.
+A companion project, https://github.com/stevefalco/ansi-terminal-firmware contains the FPGA and assembly language software for the ANSI Terminal.
 
 Here are photos of the case, pcb, schematic and displayed text.  There is a higher resolution copy of the schematic in file terminal.pdf.
 
