@@ -1,0 +1,16 @@
+The housing consists of three parts.  The "bottom" has four holes that are
+deliberately slightly under-sized.  You can use either a 2.5 mm or #39
+drill to enlarge the holes.  Then use an M3 x 0.5 tap to thread the holes.
+
+The PCB is placed in the bottom housing, and then secured using "M-F"
+stand-offs; i.e. stand-offs with one male end and one female end.  The top
+cover will later be attached to the female end of the stand-offs.
+
+The "front" is optional.  The idea is that we have cutouts for the various
+jacks, but it would be very difficult to produce the thin sections needed with
+a typical 3D printer.  Instead, we print a thin piece to go on the inside of
+the box - the only purpose this serves is to make the package a bit neater.
+It can easily be omitted.
+
+The "top" can be printed in one color, or you can switch to a different
+color after layer 4, to make the lettering stand out.
