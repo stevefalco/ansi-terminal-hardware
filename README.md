@@ -4,18 +4,17 @@ Unlike many existing terminal projects, this project targets 1280x1024 monitors,
 
 The terminal supports both hardware and software flow control, as selected by a dip switch, and baud rates from 110 to 115200 are supported.
 
-This project contains the KiCAD schematic, board layout, gerbers, and a 3-D
-printable case design.  Note that this is a 2-layer board with surface mount
-components.
+This project contains the KiCAD schematic, board layout, gerbers, and a 3-D printable case design.  Note that this is a 2-layer board with surface mount components.
 
-A companion project, ansi-terminal-firmware, contains the FPGA and assembly
-language software for the ANSI Terminal.
+A companion project, ansi-terminal-firmware, contains the FPGA and assembly language software for the ANSI Terminal.
 
-Here are photos of the case, pcb, and displayed text.
+Here are photos of the case, pcb, schematic and displayed text.  There is a higher resolution copy of the schematic in file terminal.pdf.
 
 <img src="screenshots/hardware.jpg" >
 
 <img src="screenshots/pcb.jpg" >
+
+<img src="terminal.pdf" >
 
 <img src="screenshots/display.jpg" >
 
