@@ -14,7 +14,7 @@ Here are photos of the case, pcb, schematic and displayed text.  There is a high
 
 <img src="screenshots/pcb.jpg" >
 
-<img src="terminal.pdf" >
+<img src="screenshots/schematic.png" >
 
 <img src="screenshots/display.jpg" >
 
